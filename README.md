@@ -4,7 +4,7 @@
 
 _Clean Code_ is undoubtedly a great guide book and one of the masterpieces of programming field. Coding with your own style isn't hard, but it is when it comes to letting others understand. This book contains the wisdom of experienced programmers and the solution of the points they suffered before, which is why we should learn and put these principles into practice.
 
-This gitbook is created as my own notes of _Clean Code._ I will try to conclude the important parts or giving comments or reply based on my own understanding. The content will be uploaded gradually on the basis of my reading speed and schedule. Traditional Chinese will be the main language I used, and English version will come later. Any comment of feedback is welcomed
+This gitbook is created as my own notes of _Clean Code._ I will try to conclude the important parts or giving comments or reply based on my own understanding. The content will be uploaded gradually on the basis of my reading speed and schedule. Traditional Chinese will be the main language I used, and English version will come later. Any comment of feedback is welcomed.
 
 ## 為什麼是Clean Code?
 
