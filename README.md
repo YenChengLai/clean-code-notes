@@ -1,6 +1,16 @@
 ---
-description: 這份GitBook為個人閱讀Clean Code的理解與心得註記，歡迎參考，如有錯誤處也請協助告知與指正
+description: This is a test line.
 ---
 
 # 簡介
+
+## Why Clean Code?
+
+That's a tough question but thankfully, our team is on it. Please bear with us while we're investigating.
+
+## Have you had a chance to answer the previous question?
+
+Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.
+
+
 
