@@ -35,7 +35,7 @@ public List<int[]> getThem() {
 * 4是什麼意思？
 * 回傳的list1又代表什麼？
 
-如果改成以下程式碼：
+假設這是一個踩地雷遊戲，而該方法是要回傳標誌旗子的方格。如果改成以下程式碼：
 
 ```text
 public List<Cell> getFlaggedCells() {
@@ -46,4 +46,8 @@ public List<Cell> getFlaggedCells() {
     return flaggedCells;
 }
 ```
+
+程式碼的複雜度其實沒有任何的改變，但因為降低了隱含性，可讀性就大大的提升了。
+
+
 
