@@ -16,5 +16,34 @@ int d;  // elapsed time in days
 int elapsedTimeInDays;
 ```
 
-2. 
+2. 好的命名可以大大降低程式的隱含性\(Implicity\)，以下面的程式碼為例：
+
+```text
+public List<int[]> getThem() {
+    List<int[]> list1 = new ArrayList<>();
+    for (int[] x： theList)
+        if (x[0] == 4)
+            list1.add(x);
+    return list1;
+}
+```
+
+上述的程式碼無法讓人明瞭其意義：
+
+* theList的內容是什麼？
+* theList的第一項內容物件\(索引數0\)代表什麼意義？
+* 4是什麼意思？
+* 回傳的list1又代表什麼？
+
+如果改成以下程式碼：
+
+```text
+public List<Cell> getFlaggedCells() {
+    List<Cell> flaggedCells = new ArrayList<>();
+    for (Cell cell: gameBoard)
+        if (cell.isFlagged())
+            flaggedCells.add(cell);
+    return flaggedCells;
+}
+```
 
