@@ -55,7 +55,9 @@ public List<Cell> getFlaggedCells() {
 
 另外，當複數個模組或程式功能相似時，要謹慎地給予好區別的命名，否則在引用時非常容易造成誤解。舉例而言：AccountControlForDomesticStorage 和 AccountControlForNonDomesticStorage，就很難以簡單清楚的區分。最後，作者也提到字體的相似導致的錯誤也是我們該避免的，譬如數字0和英文字母O等等。
 
+### 使用能唸出來的名稱
 
+在語言學的領域中，單字的存在是要能夠被發音的，如果我們的變數命名是不好發音的話，那會造成我們的程式碼難以溝通和記憶。舉例而言，genymdhms和generationTimestamp，後者在需要討論時明顯較不會造成困擾。
 
 
 
