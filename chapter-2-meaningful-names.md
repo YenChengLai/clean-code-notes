@@ -49,5 +49,13 @@ public List<Cell> getFlaggedCells() {
 
 程式碼的複雜度其實沒有任何的改變，但因為降低了隱含性，可讀性就大大的提升了。
 
+### 避免誤導
+
+我們在命名的時候，通常都會有一些個人的習慣，譬如說習慣用List作為群組資料的命名結尾。作者的建議是不要這麼做，除非該變數真的是List。舉例來說，與其用accoutList，不如改為accountGroups，甚至是accounts。畢竟對於程式設計師來說，List多半是具特殊意義的集合，濫用及可能造成誤解。
+
+另外，當複數個模組或程式功能相似時，要謹慎地給予好區別的命名，否則在引用時非常容易造成誤解。舉例而言：AccountControlForDomesticStorage 和 AccountControlForNonDomesticStorage，就很難以簡單清楚的區分。最後，作者也提到字體的相似導致的錯誤也是我們該避免的，譬如數字0和英文字母O等等。
+
+
+
 
 
