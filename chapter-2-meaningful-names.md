@@ -85,3 +85,27 @@ public List<Cell> getFlaggedCells() {
 
 程式設計師不應該因為你的程式碼的命名，讓讀者需要在腦中再轉換你所要表達的意思。這通常可能是源自於專有領域的慣用代號，譬如 π = 圓周率，但讀者還要再去理解 π 所代表的意思。
 
+### 類別與方法的命名
+
+類別應使用_**名詞**_ 命名，而方法則應使用_**動詞**_ 命名。針對方法命名JavaBean提供一套標準：
+
+* 取出器\(accessors\) 應使用get作為字首     e.g. getName\(\)
+* 修改器\(mutators\) 應使用set作為字首       e.g. setName\(String name\)
+* 判定器\(predicates\) 應使用is作為字首       e.g. isChecked\(\)
+
+此外，當類別中有多個建構子\(多載 Overloading\) 時，請使用含有參數資訊的靜態工廠方法命名：
+
+```text
+Complex fulcrumPoint = Complex.FromRealNumber(23.0);
+```
+
+建立物件時意圖會明顯比下方程式碼明顯：
+
+```text
+Complex fulcrumPoing = new Complex(23.0);
+```
+
+### 每個概念使用一種字詞
+
+在程式中做單一行為時，在命名上不要用多種不同的字詞，例如「取回」這個動作在命名上將retrieve、fetch、get 交互使用，這樣只會增加困擾的機率。程式中有DeviceManager、DeviceDriver、DeviceController等等，會讓讀者困惑，究竟這些類別分別負責管理什麼？
+
