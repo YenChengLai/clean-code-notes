@@ -51,6 +51,10 @@ if (account.isChecked() && account.isDomesticSource())
 
 將函式維持在單一層級的抽象概念，這個技巧很重要，也是保持程式碼簡短的關鍵。
 
+### Switch敘述
+
+switch語法本質上就是在做一件以上的事情，在使用上我們應該盡可能的利用多型
+
 
 
 
