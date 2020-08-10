@@ -53,7 +53,24 @@ if (account.isChecked() && account.isDomesticSource())
 
 ### Switch敘述
 
-switch語法本質上就是在做一件以上的事情，在使用上我們應該盡可能的利用多型
+switch語法本質上就是在做一件以上的事情，請看以下的範例code敘述：
+
+```text
+public Money calculatePay(Employee e) throws InvalidEmployeeType {
+    switch(e.type) {
+        case COMMISSIONED:
+            return calculateCommissionPay(e);
+        case HOURLY:
+            return calculateHourlyPay(e);
+        case SALARIED:
+            return calculateSalariedPay(e);
+        default:
+            throw new InvalidEmployeeType(e.type);
+    }
+}
+```
+
+在使用上我們應該盡可能的利用多型，作者最好的利用switch的方法，是將之藏在抽象工廠底下，
 
 
 
