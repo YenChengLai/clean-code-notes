@@ -106,7 +106,7 @@ public class EmployeeFactoryImpl implements EmployeeFactory {
 }
 ```
 
-
+這個工廠使用switch敘述來建立實體，其他不同的函式，如isPayday等行為則由多型的方式來指派。
 
 
 
