@@ -79,7 +79,32 @@ public Money calculatePay(Employee e) throws InvalidEmployeeType {
 
 作者認為在使用上我們應該盡可能的利用多型， 最好的利用switch的方法，是將之藏在抽象工廠底下：
 
-
+```text
+public abstract class Employee {
+    public abstract boolean isPayday();
+    public abstract Money calculatePay();
+    public abstract void deliverPay(Money pay);
+}
+-------------------------------------------------
+public interface EmployeeFactory {
+    public Employee makeEmployee(EmployeeRecord r) throws InvalidEmployeeType;
+}
+-------------------------------------------------
+public class EmployeeFactoryImpl implements EmployeeFactory {
+    public Employee makeEmployee(EmployeeRecord r) throws InvalidEmployeeType {
+        switch(r.type) {
+        case COMMISSIONED:
+            return new CommissionedEmployee(r);
+        case HOURLY:
+            return new HourlyEmployee(r);
+        case SALARIED:
+            return new SalariedEmployee(r);
+        default:
+            throw new InvalidEmployeeType(r.type);
+        }
+    }
+}
+```
 
 
 
