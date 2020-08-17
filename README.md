@@ -1,5 +1,9 @@
-# Introduction   簡介
-
+# Introduction   簡介  
+  
+  
+## Gitbook's interface  在gitbook上閱讀
+https://frank810618.gitbook.io/clean-code/
+  
 ## Why Clean Code?
 
 _Clean Code_ is undoubtedly a great guide book and one of the masterpieces of programming field. Coding with your own style isn't hard, but it is when it comes to letting others understand. This book contains the wisdom of experienced programmers and the solution of the points they suffered before, which is why we should learn and put these principles into practice.
